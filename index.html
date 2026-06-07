@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A premium, minimal portfolio showcasing academic system projects from 1st Year to 3rd Year. Built with modern, responsive, and interactive design.">
+    <title>Academic Systems Portfolio</title>
+    <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Ambient Background Elements -->
+    <div class="ambient-glow bg-glow-1"></div>
+    <div class="ambient-glow bg-glow-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="nav-logo">
+                AGA
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <!-- Moon Icon (Dark Mode active by default) -->
+                    <svg class="icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <!-- Sun Icon (Hidden by default) -->
+                    <svg class="icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <button class="icon-btn" id="dev-mode-btn" aria-label="Toggle Developer Panel" title="Developer Mode (Manage Projects)">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge fade-in">STUDENT PORTFOLIO</div>
+                    <h1 class="hero-title fade-in delay-1">
+                        Hi, I'm <span class="text-gradient">Apple Grace Asna</span>.
+                    </h1>
+                    <p class="hero-subtitle fade-in delay-2">
+                        A BS Information Technology Student (3rd Year) tracing my evolution from programming logic to database-driven and full-stack systems.
+                    </p>
+                    <div class="hero-cta fade-in delay-3">
+                        <a href="#projects" class="btn btn-primary">View Systems Timeline</a>
+                        <a href="#about" class="btn btn-secondary">About My Journey</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in delay-2">
+                    <div class="hero-avatar-container">
+                        <div class="hero-avatar-frame">
+                            <img src="/profile.jpg" alt="Apple Grace Asna" class="hero-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&auto=format&fit=crop&q=80';">
+                            <div class="hero-avatar-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="arrow"></span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Evolution</h2>
+                    <p class="section-desc">An academic timeline of technical growth, programming competencies, and architectural understanding.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info">
+                        <div class="profile-card-header">
+                            <div class="profile-avatar-frame">
+                                <img src="/profile.jpg" alt="Apple Grace Asna" class="profile-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&auto=format&fit=crop&q=80';">
+                                <div class="profile-glow-ring"></div>
+                            </div>
+                            <div class="profile-title-block">
+                                <h3 class="profile-name">Apple Grace Asna</h3>
+                                <span class="profile-status-badge">
+                                    <span class="status-dot"></span>
+                                    BSIT Student &bull; 3rd Year
+                                </span>
+                            </div>
+                        </div>
+                        <h3 style="margin-top: 24px; margin-bottom: 12px; font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700;">About Me</h3>
+                        <p class="about-text">
+                            I'm an IT student who is passionate about designing and engineering robust software systems. Tracing my academic journey from foundational command-line tools to full-stack architectures, I strive to solve real-world problems through clean code, structured logic, and user-centric interfaces.
+                        </p>
+                        <p class="about-text">
+                            From my first "Hello World" in CLI projects to building full-scale database systems and web platforms, I treat every academic project as an opportunity to construct reliable, production-ready solutions.
+                        <div class="academic-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" id="projects-count">0</span>
+                                <span class="stat-label">Total Systems Built</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Programming Years</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Tech Tools Mastered</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="evolution-timeline">
+                        <div class="timeline-step">
+                            <div class="step-marker">1</div>
+                            <div class="step-content">
+                                <h4>1st Year: Foundations & Logic</h4>
+                                <p>Familiarized with fundamental programming paradigms (Structured Programming, Object-Oriented basics). Created Command Line Interface (CLI) tools, logic-heavy console games, and learned file handling systems using C++, Java, or Python.</p>
+                                <div class="step-skills">
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">Java Basics</span>
+                                    <span class="skill-tag">Algorithms</span>
+                                    <span class="skill-tag">CLI</span>
+                                    <span class="skill-tag">Data Logic</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step">
+                            <div class="step-marker">2</div>
+                            <div class="step-content">
+                                <h4>2nd Year: Interfaces & Data Management</h4>
+                                <p>Transitioned from the terminal to Graphical User Interfaces (GUIs) and relational databases. Developed standalone applications with visual frameworks, designed databases, and implemented core Data Structures (Linked Lists, Stacks, Trees).</p>
+                                <div class="step-skills">
+                                    <span class="skill-tag">SQL & MySQL</span>
+                                    <span class="skill-tag">Python (Tkinter)</span>
+                                    <span class="skill-tag">Java Swing</span>
+                                    <span class="skill-tag">Data Structures</span>
+                                    <span class="skill-tag">OOP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-step">
+                            <div class="step-marker">3</div>
+                            <div class="step-content">
+                                <h4>3rd Year: Systems Integration & Web</h4>
+                                <p>Currently building full-stack web architectures, client-server models, and integrated APIs. Focused on scalable design, modern UI/UX principles, testing, deployment, and optimizing database engines.</p>
+                                <div class="step-skills">
+                                    <span class="skill-tag">JavaScript / ES6</span>
+                                    <span class="skill-tag">HTML5 / CSS3</span>
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">RESTful APIs</span>
+                                    <span class="skill-tag">DBMS</span>
+                                    <span class="skill-tag">Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="projects-nav-header">
+                    <div class="section-header">
+                        <h2 class="section-title">System Showcase</h2>
+                        <p class="section-desc">Explore the actual applications designed and engineered over each academic year.</p>
+                    </div>
+
+                    <!-- Interactive Filtering Tabs -->
+                    <div class="filter-tabs" role="tablist">
+                        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Years</button>
+                        <button class="filter-tab" data-filter="1" role="tab" aria-selected="false">1st Year</button>
+                        <button class="filter-tab" data-filter="2" role="tab" aria-selected="false">2nd Year</button>
+                        <button class="filter-tab" data-filter="3" role="tab" aria-selected="false">3rd Year</button>
+                    </div>
+                </div>
+
+                <h3 id="projects-grid-heading" class="projects-grid-heading">All Projects (0)</h3>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Dynamically populated via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-desc">Have a question about my systems or interested in collaborating? Let's connect.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h3>Contact Details</h3>
+                        <p>Feel free to reach out via any of these channels. I am always open to discussing new systems projects, logic issues, or technical roles.</p>
+                        
+                        <ul class="contact-details-list">
+                            <li>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label">Email</span>
+                                    <a href="mailto:applegraceasna0@gmail.com" class="value">applegraceasna0@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label">Phone</span>
+                                    <a href="tel:09940108432" class="value">09940108432</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 2a10 10 0 0 0-7.07 17.07C5.9 20 6.64 20.3 7 21a20.87 20.87 0 0 0 10 0c.36-.7 1.1-1 2.07-1.93A10 10 0 0 0 12 2z"></path>
+                                        <path d="M12 18v-6"></path>
+                                        <circle cx="12" cy="8" r="1"></circle>
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label">Location</span>
+                                    <span class="value">Panabo City</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label">GitHub</span>
+                                    <a href="https://github.com/gracey27-berry" target="_blank" rel="noopener noreferrer" class="value" id="github-link">github.com/gracey27-berry</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-form-panel">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Name</label>
+                                    <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email</label>
+                                    <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Subject</label>
+                                    <input type="text" id="contact-subject" name="subject" placeholder="Collaboration / Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Message</label>
+                                <textarea id="contact-message" name="message" rows="5" placeholder="Hi, I am interested in your project system..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="container footer-container">
+            <p>&copy; 2026 Academic Systems Portfolio. All rights reserved.</p>
+            <p class="footer-meta">Designed for 1st - 3rd Year Showcase</p>
+        </div>
+    </footer>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div class="modal" id="project-modal" role="dialog" aria-hidden="true">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-wrapper">
+            <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- DEVELOPER MODE SLIDE-OUT PANEL -->
+    <aside class="dev-panel" id="dev-panel" aria-hidden="true">
+        <div class="dev-panel-header">
+            <h3>Developer Controls</h3>
+            <button class="close-dev" id="close-dev" aria-label="Close Developer Controls">&times;</button>
+        </div>
+        <div class="dev-panel-content">
+            <div class="dev-info">
+                <p>Welcome to Developer Mode. You can directly add, edit, or delete the systems list. Your changes are automatically saved to the browser's <code>localStorage</code>.</p>
+            </div>
+            
+            <!-- Add Project Form -->
+            <form id="add-project-form" class="dev-form">
+                <h4>Add New Project System</h4>
+                
+                <div class="form-group">
+                    <label for="dev-title">System Title *</label>
+                    <input type="text" id="dev-title" placeholder="e.g., Library Management System" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dev-year">Academic Year *</label>
+                        <select id="dev-year" required>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dev-category">Category / Domain *</label>
+                        <input type="text" id="dev-category" placeholder="e.g., Database, CLI, OOP" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="dev-tech">Technologies Used * <small>(Comma separated)</small></label>
+                    <input type="text" id="dev-tech" placeholder="e.g., Java, MySQL, OOP, JavaSwing" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dev-image">Project Cover Color Preset *</label>
+                    <select id="dev-image">
+                        <option value="grad-cyan">Cyber Cyan (Cyan - Blue)</option>
+                        <option value="grad-purple">Midnight Nebula (Purple - Indigo)</option>
+                        <option value="grad-orange">Solar Flare (Orange - Red)</option>
+                        <option value="grad-green">Bio Hazard (Emerald - Lime)</option>
+                        <option value="grad-pink">Neon Velvet (Pink - Rose)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dev-img-file">Upload Project Image <small>(Recommended, saves to browser)</small></label>
+                    <input type="file" id="dev-img-file" accept="image/*" style="border: 1px dashed var(--border-color); padding: 12px; background: var(--bg-tertiary); border-radius: var(--border-radius-sm); cursor: pointer;">
+                </div>
+
+                <div class="form-group" style="text-align: center; margin: -10px 0 10px; color: var(--text-muted); font-size: 0.8rem; font-weight: 600;">— OR —</div>
+
+                <div class="form-group">
+                    <label for="dev-img-url">Paste Local or Web Image URL</label>
+                    <input type="url" id="dev-img-url" placeholder="e.g., /into the woods.jpg or web url">
+                </div>
+
+                <div class="form-group">
+                    <label for="dev-short-desc">Short Description * <small>(For project card, max 100 chars)</small></label>
+                    <input type="text" id="dev-short-desc" placeholder="A GUI-based system to catalog books and process student loans." max-length="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dev-long-desc">Full System Description * <small>(Detailed architecture & system purpose)</small></label>
+                    <textarea id="dev-long-desc" rows="4" placeholder="Detail the architecture, system constraints, database model, and general use-cases." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="dev-features">Key System Features * <small>(One feature per line)</small></label>
+                    <textarea id="dev-features" rows="3" placeholder="Book search & reservation
+Automatic fine calculation
+Dual role interfaces (Student/Admin)" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dev-repo">GitHub Link</label>
+                        <input type="url" id="dev-repo" placeholder="https://github.com/...">
+                    </div>
+                    <div class="form-group">
+                        <label for="dev-demo">Live Demo Link</label>
+                        <input type="url" id="dev-demo" placeholder="https://...">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Add System to Portfolio</button>
+            </form>
+
+            <hr class="dev-divider">
+
+            <!-- Existing Projects Manager -->
+            <div class="dev-manage-projects">
+                <h4>Current Systems List</h4>
+                <div class="dev-projects-list" id="dev-projects-list">
+                    <!-- Loaded dynamically via JS -->
+                </div>
+            </div>
+
+            <div class="dev-export-section" style="margin-top: 32px; border-top: 1px solid var(--border-color); padding-top: 24px;">
+                <h4>Export to Codebase</h4>
+                <p style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.4;">
+                    To make your added projects permanent for GitHub Pages, export them as a code snippet and paste them inside your codebase.
+                </p>
+                <button type="button" id="export-projects-btn" class="btn btn-secondary btn-block" style="font-size: 0.85rem; padding: 10px;">Generate Code Snippet</button>
+                <textarea id="export-code-box" rows="8" readonly style="width: 100%; font-family: monospace; font-size: 0.72rem; margin-top: 12px; display: none; background: #070a13; border: 1px solid var(--border-color); color: var(--accent-cyan); padding: 10px; border-radius: var(--border-radius-sm); outline: none; resize: vertical;"></textarea>
+                <button type="button" id="reset-projects-btn" class="btn btn-secondary btn-block" style="font-size: 0.85rem; padding: 10px; margin-top: 12px; border-color: rgba(239, 68, 68, 0.4); color: #ef4444; background: rgba(239, 68, 68, 0.05);">Reset to Codebase Defaults</button>
+            </div>
+        </div>
+    </aside>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
