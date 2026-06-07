@@ -1013,9 +1013,14 @@ function resolveImagePath(path) {
         cleanPath = cleanPath.substring(cleanPath.indexOf('public/') + 7); // Keep everything after 'public/'
     }
     
-    // Ensure it starts with a single slash if it is a local relative asset
-    if (cleanPath && !cleanPath.startsWith('/') && !cleanPath.startsWith('http://') && !cleanPath.startsWith('https://') && !cleanPath.startsWith('data:')) {
-        cleanPath = '/' + cleanPath;
+    // Ensure it starts with './' if it is a local relative asset
+    if (cleanPath && !cleanPath.startsWith('/') && !cleanPath.startsWith('./') && !cleanPath.startsWith('http://') && !cleanPath.startsWith('https://') && !cleanPath.startsWith('data:')) {
+        cleanPath = './' + cleanPath;
+    }
+    
+    // Convert leading absolute slash to relative './' to support GitHub Pages subpaths
+    if (cleanPath.startsWith('/')) {
+        cleanPath = '.' + cleanPath;
     }
     
     return cleanPath;
