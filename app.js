@@ -275,7 +275,6 @@ const defaultProjects = [
         demoLink: ""
     },
 
-
     {
         title: "UNINEST",
         year: 3,
